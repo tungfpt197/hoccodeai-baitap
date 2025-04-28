@@ -1,0 +1,21 @@
+- thinkdiffusion:
+	login --> lấy Set-Cookie trong response header và set vào các api còn lại
+	create --> tạo machines, lấy response subdomain để gán cho api khác
+	đợi 1 phút để khởi động machines
+	machines -> lấy remainingRunningSeconds, state của machines:
+		+ setting-up
+		+ pending
+		+ running
+		+ SD-READY
+		+ shutting-down
+		+ terminated
+	destroy --> huỷ machines
+	get image ---> ???
+	
+- công việc cần làm:
+	+ check và viết lại prom, thêm animation khi render video
+	+ add credit và cấu hình wan trên thinkdiffusion
+	+ tìm hiểu build n8n trên môi trường mạng
+	***** tìm kiếm key trend, key thích hợp ******
+	
+	

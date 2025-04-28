@@ -1,0 +1,45 @@
+- Giới thiệu bản thân:
+	+ 4 năm kinh nghiệm: 3 năm làm reactjs, 1 năm làm Java web
+	+ Giới thiệu về dự án Holapay:
+		* là dự án ví điện tử cho phép người dùng có thể mua bán, chuyển tiền và exchange tiền điện tử và crypto.
+		* tự hào là 1 trong những người tạo base cho dự án Hola Main Backoffice
+- các dự án mình đã làm qua, công nghệ sử dụng:
+	Holapay: Reactjs, Redux, RTK query
+- Các bước dựng base dự án:
+	+ Phân tích UI, xây dựng các component dùng chung
+	+ Dựng call api: axios, RTK query
+	+ Dựng cache
+	+ Dựng các function dùng chung
+- Các hooks hay sử dụng: useState, useMemo, useEffect
+- Đã từng sử dụng custom hooks, lợi ích khi sử dụng custom hooks là phân chia rõ code UI và code logic, dễ dàng fix bug và maintain.
+- E hay dùng redux để quản lý state. quản lý state để sinh ra những UI động. Luồng call api trong redux-saga:
+	+ Tạo action để map với chức năng trên UI
+	+ Tạo reducer để lưu dữ liệu vào state và ánh xạ đến action
+	+ Tạo saga để thực hiện call api và gọi action
+- E thường dùng axios, RTK query(Redux toolkit) để call api trong react
+- Để tối ưu performance trên react, e thường dùng useMemo và useCallback. useMemo sẽ cache data, useCallback sẽ cache cả 1 function
+- cách xử lý: load 1 phần video, huỷ call video cũ
+- Theo e nhớ thì có Arrow functions (khi tạo 1 function mới cú pháp es6 sẽ tiện hơn es5 => {}),có phần biến(es5 sử dụng var để khai báo biến, còn es6 thường sẽ dùng let, const)
+- Reactjs và Vuejs:
+	+ Giống nhau: cả 2 đều là ngôn ngữ dựa trên JS để phát trển web, cả 2 đều có cộng đồng đông đảo
+	+ Khác nhau: ReactJS sử dụng JSX, VueJS sử dụng cú pháp template dựa trên HTML. ReactJS phổ biến hơn Vuejs
+- Về phần này e cũng không nhớ rõ lắm, thường thì e dùng react hooks để quản lý state
+- Class Component thì có các Lifecycle methods như componentDidMount, componentDidUpdate đế tác động trực tiếp vào vòng đời của component, 
+Function Component không có các Lifecycle methods mà ta phải sử dụng Hooks.
+	+ Class component thường được sử dụng trong các dự án cũ, có yêu cầu sử dụng lifecycle methods phức tạp và quản lý state phức tạp
+	Function component được e thấy sử dụng nhiều trong các dự án mới cùng với React Hooks
+- es6 thường sẽ dùng let, const để khai báo biến:
+	+ let,const dùng trong phạm vi block scope
+	+ const phải gán giá trị ngay khi khai báo và không thể gán lại giá trị mới cho biến
+	+ let thì ngược lại không cần gán giá trị ngay khi khai báo và có thể gán lại giá trị mới cho biến
+  es5 thì sử dụng var để khai báo biến:
+	+ dùng trong phạm vi function scope
+	+ có thể khai báo lại biến   
+- header, footer theo e thấy nó dùng đế SEO nhiều hơn:
+	+ header chứa logo, tiêu đề, nút điều hướng
+	+ footer chứa các thông tin bổ sung như liên hệ, liên kết, bản quyền
+- estimate 1 task giao diện:
+	+ Phân tích giao diện xem có giao diện nào bị trùng hoặc gần giống nhau không
+	+ Tách các thành phần của giao diện thành nhiều component con như header, content và footer
+	+ Đánh giá độ phức tạp dựa trên kinh nghiệm
+	+ Sử dụng phương pháp tương đối: Ví dụ: trước đây m đã làm màn hình tương tự như vậy mất bao nhiêu thời gian thì sẽ estimate như vậy
